@@ -1,5 +1,14 @@
+import axios from 'axios'
+
 export function LogoutPage () { 
+  const handleClick = (event) => { 
+    event.preventDefault();
+    delete axios.defaults.headers.common["Authorization"];
+    localStorage.removeItem("jwt");
+    window.location.href='/';
+  };
+
   return (
-    <h1>Logout</h1>
+    <a href="#" onClick={handleClick}>Logout</a>
   )
 }

@@ -5,7 +5,6 @@ import { Footer } from './Footer';
 import { SignupPage } from './SignupPage';
 import { RoomsIndexPage } from './RoomsIndexPage';
 import { LoginPage } from './LoginPage';
-import { LogoutPage } from './LogoutPage'
 
 const router = createBrowserRouter([
   { 
