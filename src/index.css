@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Full height */
+}
+
+main {
+  flex: 1;
+  /* Allow main content to grow */
+}
+
+footer {
+  background-color: #f1f1f1;
+  /* Change this to your desired color */
+  padding: 20px;
+  /* Adjust padding as necessary */
+  text-align: center;
+  /* Center text in footer */
+}
