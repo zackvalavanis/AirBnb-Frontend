@@ -4,7 +4,7 @@ export function Header () {
   
   return (
     <header>
-      <h1>Hello</h1>
+      <Link to='/'>Home</Link> | <Link to='/signup'>Signup</Link>
     </header>
   )
 }
