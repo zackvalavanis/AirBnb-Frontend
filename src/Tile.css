@@ -45,3 +45,8 @@
   text-align: center;
   /* Center title text */
 }
+
+.tile:hover .tile-image {
+  transform: scale(1.05);
+  /* Slightly scale the image on hover */
+}

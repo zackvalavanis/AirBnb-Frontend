@@ -4,7 +4,7 @@ import Tile  from './Tile'
 export function HomePage () { 
   return ( 
     <div>
-      <h1>Welcome to our Home Page</h1>
+      <h1 className='home-page'>Welcome to our Home Page</h1>
       <div className='tiles-container'>
         <Tile 
           title='Rooms'

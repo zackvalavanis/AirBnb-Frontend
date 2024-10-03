@@ -1,14 +1,10 @@
-html,
-body {
-  height: 100%;
+* {
+  box-sizing: border-box;
+  /* Include padding and borders in width and height calculations */
   margin: 0;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /* Full height */
+  /* Reset default margins */
+  padding: 0;
+  /* Reset default padding */
 }
 
 main {
@@ -16,11 +12,71 @@ main {
   /* Allow main content to grow */
 }
 
+body {
+  background-color: rgb(142, 138, 138)
+}
+
 footer {
-  background-color: #f1f1f1;
-  /* Change this to your desired color */
-  padding: 20px;
-  /* Adjust padding as necessary */
   text-align: center;
-  /* Center text in footer */
+  color: white;
+  position: fixed;
+  /* Keep the footer fixed at the bottom */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Position it at the bottom */
+  background-color: rgb(100, 99, 99);
+  /* Set background color */
+  padding: 25px;
+  /* Add some padding */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: shadow effect */
+  z-index: 1000;
+  /* Ensure it stays above other elements */
+}
+
+.home-page {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+header {
+  text-align: center;
+  justify-content: space-around;
+  background-color: rgb(100, 99, 99);
+  padding: 80px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 30px;
+  font-size: 20px;
+}
+
+header a:hover {
+  background-color: rgba(7, 47, 17, 0.849);
+  border-radius: 20px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+  min-height: 100vh;
+  /* Ensure it takes at least full height of the viewport */
+}
+
+.app-container>footer {
+  margin-top: auto;
+  /* Push the footer to the bottom */
 }
