@@ -1,4 +1,3 @@
-import { useLoaderData } from 'react-router-dom'
 import Tile  from './Tile'
 
 
@@ -9,9 +8,14 @@ export function HomePage () {
       <div className='tiles-container'>
         <Tile 
           title='Rooms'
-          imageUrl='https://waclightinglights.com/dw/image/v2/BHCF_PRD/on/demandware.static/-/Sites-site-catalog-lny-us/default/dw7283b02d/images/rooms/generic-shopbyroom-bedroom-card.png?sw=588&sh=323&sm=fit&sfrm=jpg'
+          imageUrl='https://www.theparkhotels.com/images/site-specific/chennai/rooms-suites-min.jpg'
           link='/rooms'
           />
+        <Tile 
+          title='Login'
+          imageUrl="https://cdn.shopify.com/s/files/1/1624/7461/files/Log-Home-Pros-and-cons_600x600.jpg?v=1643646621"
+          link='/Login'
+        />
           
 
 

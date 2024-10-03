@@ -1,0 +1,47 @@
+.home-page {
+  text-align: center;
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows tiles to wrap to the next line */
+  justify-content: center;
+  /* Centers tiles in the container */
+  gap: 20px;
+  /* Space between tiles */
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  /* Stack image and title */
+  width: 500px;
+  /* Width of each tile */
+  text-decoration: none;
+  /* Removes underline from links */
+  color: inherit;
+  /* Inherit text color */
+  border: 1px solid #ccc;
+  /* Optional: adds border around tiles */
+  border-radius: 8px;
+  /* Optional: rounds the corners */
+  overflow: hidden;
+  /* Prevents overflow of content */
+}
+
+.tile-image {
+  width: 100%;
+  /* Full width of tile */
+  height: auto;
+  /* Maintains aspect ratio */
+}
+
+.tile-title {
+  padding: 10px;
+  /* Padding for the title */
+  background-color: #f8f8f8;
+  /* Optional: background for the title */
+  text-align: center;
+  /* Center title text */
+}
