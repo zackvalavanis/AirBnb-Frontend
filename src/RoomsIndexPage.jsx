@@ -1,12 +1,31 @@
 import { useLoaderData, useNavigate} from 'react-router-dom';
+import { useEffect, useState } from 'react'
+
 
 export function RoomsIndexPage () { 
   const rooms = useLoaderData();
   const navigate = useNavigate();
+  const [user, setUser ] = useState(null);
+
+  useEffect (() => { 
+    const userData = localStorage.getItem("user");
+    if (userData){ 
+      setUser(JSON.parse(userData));
+    }
+  }, []);
 
   const handleShow = (room) => { 
     console.log('handleShow', room);
     navigate(`/rooms/${room.id}`)
+  }
+
+  if (!user) { 
+    return (
+      <div>
+        <h1>Please log in to view your rooms.</h1>
+        <button onClick={() => navigate('./login')}>Login</button>
+      </div>
+    )
   }
 
   return (

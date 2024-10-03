@@ -18,6 +18,12 @@ export function LoginPage () {
         console.log(response.data);
         axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
         localStorage.setItem("jwt", response.data.jwt);
+        const user = { 
+          id: response.data.id,
+          email: response.data.email
+        };
+        localStorage.setItem("user", JSON.stringify(user));
+        
         event.target.reset();
         window.location.href='/rooms';
       })
