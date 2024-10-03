@@ -13,13 +13,13 @@ export function LoginPage () {
     setErrors([]);
     const params = new FormData(event.target);
     axios
-      .post('http://localhost:3000/users.json', params)
+      .post('http://localhost:3000/sessions.json', params)
       .then((response) => { 
         console.log(response.data);
-        axios.defaults.header.common["Authorization"] = "Bearer " + response.data.jwt;
+        axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
         localStorage.setItem("jwt", response.data.jwt);
         event.target.reset();
-        window.location.href='/';
+        window.location.href='/rooms';
       })
       .catch((error) => { 
         console.log(error.response);
@@ -42,6 +42,7 @@ export function LoginPage () {
         <div>
           Password: <input name='password' type='password' />
         </div>
+        <button type='submit'>Login</button>
       </form>
     </div>
   )

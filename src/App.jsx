@@ -1,10 +1,14 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-
+import axios from 'axios'
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { SignupPage } from './SignupPage';
 import { RoomsIndexPage } from './RoomsIndexPage';
 import { LoginPage } from './LoginPage';
+import { RoomsShowPage } from './RoomsShowPage';
+import { HomePage } from './HomePage';
+
+
 
 const router = createBrowserRouter([
   { 
@@ -16,9 +20,20 @@ const router = createBrowserRouter([
       </div>
     ), 
     children: [
+      {
+        path: '/',
+        element: <HomePage />,
+      },
       { 
-        path: '/', 
-        element: <RoomsIndexPage />
+        path: '/Rooms', 
+        element: <RoomsIndexPage />,
+        loader: () => axios.get("http://localhost:3000/rooms.json").then((response) => response.data)
+      },
+      {
+        path: '/rooms/:id', 
+        element: <RoomsShowPage />, 
+        loader: ({ params }) => axios.get(`http://localhost:3000/rooms/${params.id}.json`).then((response) => 
+          response.data),
       },
       { 
         path: '/signup',
