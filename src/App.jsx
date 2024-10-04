@@ -7,6 +7,7 @@ import { RoomsIndexPage } from './RoomsIndexPage';
 import { LoginPage } from './LoginPage';
 import { RoomsShowPage } from './RoomsShowPage';
 import { HomePage } from './HomePage';
+import { ReservationsPage } from './ReservationsPage';
 
 
 
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
       { 
         path: '/login',
         element: <LoginPage />
+      }, 
+      { 
+        path: '/reservations', 
+        element: <ReservationsPage />, 
+        loader: () => axios.get('http://localhost:3000/reservations.json').then((response) => response.data)
       }
     ]
   }
