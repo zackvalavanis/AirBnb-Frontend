@@ -47,7 +47,9 @@ const router = createBrowserRouter([
       { 
         path: '/reservations', 
         element: <ReservationsPage />, 
-        loader: () => axios.get('http://localhost:3000/reservations.json').then((response) => response.data)
+        loader: () => axios.get('http://localhost:3000/users.json').then((response) => {
+          console.log(response.data)
+        return response.data })
       }
     ]
   }

@@ -46,7 +46,7 @@ export function RoomsIndexPage () {
               <p>Total Occupancy: {room.total_occupancy}</p>
               <p>Total Bedrooms: {room.total_bedrooms}</p>
               <p>Total Bathrooms: {room.total_bathrooms}</p>
-              <button onClick={() => handleShow(room)}>More Info</button>
+              <button onClick={() => handleShow(room)}>More Info & Booking</button>
             </div>
           ))
         }
