@@ -39,13 +39,7 @@ export function RoomsIndexPage () {
               <h1>City: {room.city}</h1>
               <h1>State: {room.state}</h1>
               <h1>price: {room.price}</h1>
-              <h1>description: {room.description}</h1>
-              <h1>Home Details</h1>
-              <p>Home Type: {room.home_type}</p>
-              <p>Room Type: {room.room_type}</p>
-              <p>Total Occupancy: {room.total_occupancy}</p>
-              <p>Total Bedrooms: {room.total_bedrooms}</p>
-              <p>Total Bathrooms: {room.total_bathrooms}</p>
+              <p>description: {room.description}</p>
               <button onClick={() => handleShow(room)}>More Info & Booking</button>
             </div>
           ))
