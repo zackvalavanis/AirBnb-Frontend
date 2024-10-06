@@ -3,6 +3,17 @@ import { useLoaderData } from 'react-router-dom';
 export function RoomsShowPage() { 
   const room = useLoaderData(); // This will get the room data
 
+
+
+
+
+
+
+
+
+
+
+  
   return ( 
     <div>
       <h1>Room Details</h1>
@@ -18,6 +29,7 @@ export function RoomsShowPage() {
       <p>Total Occupancy: {room.total_occupancy}</p>
       <p>Total Bedrooms: {room.total_bedrooms}</p>
       <p>Total Bathrooms: {room.total_bathrooms}</p>
+      <button>Reserve Home</button>
     </div>
   );
 }
