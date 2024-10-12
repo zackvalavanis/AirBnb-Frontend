@@ -8,11 +8,12 @@
 .search>button {
   position: absolute;
   left: 0;
-  top: 460px;
+  top: 400px;
   text-transform: inherit !important;
   background-color: #ff7779;
   color: white;
-  width: 579px;
+  width: 559px;
+  border-radius: 0;
 }
 
 .search>button:hover {
@@ -30,10 +31,11 @@
   position: absolute;
   left: 0;
 
+
 }
 
 .search>input {
-  width: 539px;
+  width: 559px;
   padding: 20px;
   position: absolute;
   left: 0;

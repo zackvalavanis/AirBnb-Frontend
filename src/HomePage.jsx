@@ -12,11 +12,20 @@ export function HomePage () {
           src='https://blog.canadianloghomes.com/wp-content/uploads/2020/10/modern-rustic-living-room-ideas.jpg'
           title='Rooms'
           description='Find your dream vacation home'
-          price='40'
           link='/Rooms'
         />
-        {/* <Card />
-        <Card /> */}
+        <Card 
+          src='https://marylousobel.com.au/wp-content/uploads/2018/07/business-133-copy-min-scaled-2.jpg'
+          title='Login'
+          description='Login to save your vacations'
+          link='/Login'
+        />
+        <Card
+          src='https://www.bhg.com/thmb/hkhPW8rieqTtSQqv48zoE9r2Dwo=/6000x0/filters:no_upscale():strip_icc()/BHG109001-2_preview-b0651b761f954710a0e5e17388a16d6d.jpg'
+          title='Signup'
+          description="Signup to start"
+          link='/signup'
+        />
       </div>
       <div className='home_section'>
         {/* <Card />

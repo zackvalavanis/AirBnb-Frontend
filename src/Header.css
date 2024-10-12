@@ -2,41 +2,49 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  /* Keep space between elements */
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 100;
   width: 100%;
+  padding: 10px 20px;
+  /* Padding for the header */
 }
 
 .header_icon {
   object-fit: contain;
   height: 40px;
-  margin-left: 20px
 }
 
 .header_center {
   display: flex;
   align-items: center;
+  justify-content: center;
+  /* Center the content */
   flex: 1;
-  max-width: fit-content;
-  padding: 10px;
-  margin-left: 20px;
+  /* Allow it to take up remaining space */
+  max-width: 500px;
+  /* Optional: Limit maximum width */
   border: 1px solid lightgrey;
   border-radius: 999px;
+  padding: 10px;
+  margin: 0 20px;
+  /* Add horizontal margin */
 }
 
 .header_center>input {
   border: none;
   padding: 10px;
   outline-width: 0;
+  flex: 1;
+  /* Make the input take the available space */
 }
-
 
 .header_right {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 15vw;
-  margin-right: 80px;
+  /* Adjust as needed */
 }

@@ -1,3 +1,19 @@
+/* Reset default margins and paddings */
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Ensures padding and border are included in width and height calculations */
+}
+
+/* Apply consistent margins to the body or a main wrapper */
+body {
+  margin: 20px;
+  /* Set your desired margin */
+}
+
+/* Alternatively, if you have a main wrapper, apply margins there */
+.wrapper {
+  margin: 20px;
+  /* Same desired margin */
 }
