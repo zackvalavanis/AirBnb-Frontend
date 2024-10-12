@@ -1,8 +1,6 @@
-// import Tile  from './Tile'
 import { Banner } from './Banner'
 import './HomePage.css'
-import Card from '@mui/material/Card';
-
+import { Card } from './Card'
 
 export function HomePage () { 
   return ( 
@@ -10,14 +8,20 @@ export function HomePage () {
       <div className='home'>
       <Banner />
       <div className='home_section'>
-        <Card />
-        <Card />
-        <Card />
+        <Card 
+          src='https://blog.canadianloghomes.com/wp-content/uploads/2020/10/modern-rustic-living-room-ideas.jpg'
+          title='Rooms'
+          description='Find your dream vacation home'
+          price='40'
+          link='/Rooms'
+        />
+        {/* <Card />
+        <Card /> */}
       </div>
       <div className='home_section'>
+        {/* <Card />
         <Card />
-        <Card />
-        <Card />
+        <Card /> */}
       </div>
       </div>
       {/* <div className='tiles-container'>
