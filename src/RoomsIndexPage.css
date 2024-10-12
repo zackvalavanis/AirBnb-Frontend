@@ -1,0 +1,27 @@
+.room_index {
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+  margin: 10px;
+  border: 0px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  min-width: 300px;
+  min-height: 200px;
+  max-height: 1200px;
+  max-width: 1000px;
+}
+
+.room_index>h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.room_index>img {
+  width: 100%;
+  /* Make image responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}

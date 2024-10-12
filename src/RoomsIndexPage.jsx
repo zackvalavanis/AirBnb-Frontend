@@ -1,6 +1,6 @@
 import { useLoaderData, useNavigate} from 'react-router-dom';
 import { useEffect, useState } from 'react'
-
+import './RoomsIndexPage.css'
 
 export function RoomsIndexPage () { 
   const rooms = useLoaderData();
@@ -29,7 +29,7 @@ export function RoomsIndexPage () {
   }
 
   return (
-    <div>
+    <div className='room_index'>
       <h1>All Rooms</h1>
         {
           rooms.map((room) => (
@@ -40,7 +40,9 @@ export function RoomsIndexPage () {
               <h1>State: {room.state}</h1>
               <h1>price: ${room.price}</h1>
               <p>description: {room.description}</p>
+              <div className='more_info_button'>
               <button onClick={() => handleShow(room)}>More Info & Booking</button>
+              </div>
             </div>
           ))
         }
