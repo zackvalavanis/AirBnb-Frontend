@@ -23,7 +23,7 @@ export function RoomsIndexPage () {
     return (
       <div>
         <h1>Please log in to view your rooms.</h1>
-        <button onClick={() => navigate('./login')}>Login</button>
+        <button onClick={() => navigate('/login')}>Login</button>
       </div>
     )
   }
